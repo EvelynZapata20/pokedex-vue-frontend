@@ -1,0 +1,122 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Opcional: evita desplazamiento horizontal */
+}
+
+header {
+    background-color: #1c1c1c; /* Fondo oscuro */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Centrar los enlaces */
+    align-items: center;
+    gap: 30px; /* Espaciado entre los enlaces */
+}
+
+a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 5px 15px;
+    font-weight: normal;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    font-weight: bold;
+    color: #f0c330; /* Color al pasar el cursor */
+}
+
+.router-link-active {
+    font-weight: bold;
+    color: #f0c330;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    background-color: rgba(0, 0, 0, 0.87);
+}
+
+.text-section h1,
+.profile-container h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    color: white;
+}
+
+.quote-container {
+    display: flex;
+    height: 88vh; 
+    width: 80%;
+    max-width: 1200px; 
+    color: white;
+    border: 1px solid #f0c330;
+}
+
+.image {
+    max-width: 100%;
+    border:1px solid #f0c330;
+    height: auto;
+    object-fit: cover; /* Ajuste de la imagen */
+}
+
+.text-section {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.text-section p {
+    font-size: 1.2rem;
+    color: #b0b0b0; 
+}
+
+.profile-container {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.card-container {
+    margin-top: 50px;
+  display: flex;
+  gap: 20px; /* Espacio entre las tarjetas */
+  justify-content: center;
+  width: 100%;
+  max-width: 800px; /* Limita el ancho máximo para una mejor apariencia en pantallas grandes */
+}
+
+.card {
+  border: 2px solid #f0c330;; /* Borde blanco */
+  border-radius: 15px; /* Bordes redondeados */
+  padding: 20px;
+  width: 200px; /* Ancho fijo para cada tarjeta */
+  text-align: center;
+}
