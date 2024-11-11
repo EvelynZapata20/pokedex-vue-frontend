@@ -8,7 +8,7 @@ import { RouterLink, RouterView } from 'vue-router';
     <header>
       <nav>
         <RouterLink to="/">FRASES</RouterLink>
-        <RouterLink to="/profile">POKENEAS</RouterLink>
+        <RouterLink to="/basic-info">POKENEAS</RouterLink>
       </nav>
     </header>
 

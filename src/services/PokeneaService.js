@@ -5,22 +5,22 @@ console.log("API_URL:", API_URL);
 
 class PokeneaService {
   
-  async getProfile() {
+  async getBasicInfo() {
     try {
       const response = await axios.get(`${API_URL}basic-info`);
       return response.data;
     } catch (error) {
-      console.error('Error fetching profile data:', error);
+      console.error('Error fetching basic info:', error);
       throw error;
     }
   }
 
-  async getQuote() {
+  async getInsight() {
     try {
       const response = await axios.get(`${API_URL}insight`);
       return response.data;
     } catch (error) {
-      console.error('Error fetching additional data:', error);
+      console.error('Error fetching insight:', error);
       throw error;
     }
   }

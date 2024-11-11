@@ -55,7 +55,7 @@ main {
 }
 
 .text-section h1,
-.profile-container h1 {
+.basic-info-container h1 {
     text-transform: uppercase;
     font-size: 2.5rem;
     font-weight: bold;
@@ -64,7 +64,7 @@ main {
     color: white;
 }
 
-.quote-container {
+.insight-container {
     display: flex;
     height: 88vh; 
     width: 80%;
@@ -95,7 +95,7 @@ main {
     color: #b0b0b0; 
 }
 
-.profile-container {
+.basic-info-container {
   display: flex; 
   flex-direction: column;
   align-items: center;

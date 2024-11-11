@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import QuoteView from '../views/QuoteView.vue';
-import ProfileView from '../views/ProfileView.vue';
+import InsightView from '../views/InsightView.vue';
+import BasicInfoView from '../views/BasicInfoView.vue';
 
 const routes = [
-  { path: '/', name: 'QuoteView', component: QuoteView },
-  { path: '/profile', name: 'ProfileView', component: ProfileView}
+  { path: '/', name: 'InsightView', component: InsightView },
+  { path: '/basic-info', name: 'BasicInfoView', component: BasicInfoView}
 ];
 
 const router = createRouter({
