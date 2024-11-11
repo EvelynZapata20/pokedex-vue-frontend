@@ -1,14 +1,14 @@
 <template>
-    <div class="insight-container">
-      <img :src="insight.image" class="image" />
-      <div class="text-section">
-        <h1>{{ insight.phrase }}</h1>
-        <p>ID del Contenedor: {{ insight.containerId }}</p>
-      </div>
+  <div class="insight-container">
+    <img :src="insight.image" class="image" />
+    <div class="text-section">
+      <h1>{{ insight.phrase }}</h1>
+      <p>ID del Contenedor: {{ insight.containerId }}</p>
     </div>
-  </template>
+  </div>
+</template>
   
-  <script>
+<script>
   import PokeneaService from '../services/PokeneaService';
   
   export default {
@@ -27,4 +27,4 @@
       }
     }
   };
-  </script>
+</script>

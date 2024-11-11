@@ -4,7 +4,6 @@ import { RouterLink, RouterView } from 'vue-router';
 
 <template>
   <div>
-    <!-- Header with Navigation -->
     <header>
       <nav>
         <RouterLink to="/">FRASES</RouterLink>
@@ -12,7 +11,6 @@ import { RouterLink, RouterView } from 'vue-router';
       </nav>
     </header>
 
-    <!-- Main Content Area for Dynamic Routing -->
     <main>
       <RouterView />
     </main>
