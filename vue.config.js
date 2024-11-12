@@ -1,5 +1,6 @@
 const { defineConfig } = require("@vue/cli-service");
-require('dotenv').config();
+const webpack = require("webpack");
+require("dotenv").config();
 
 module.exports = defineConfig({
   transpileDependencies: true,
@@ -8,10 +9,8 @@ module.exports = defineConfig({
   },
   configureWebpack: {
     plugins: [
-      new (require('webpack')).DefinePlugin({
-        'process.env': {
-          API_URL: JSON.stringify(process.env.VUE_APP_EXPRESS_BACKEND_URL),
-        }
+      new webpack.DefinePlugin({
+        'process.env.VUE_APP_EXPRESS_BACKEND_URL': JSON.stringify(process.env.VUE_APP_EXPRESS_BACKEND_URL || 'http://default-url')
       })
     ]
   }
