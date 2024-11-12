@@ -30,10 +30,10 @@ npm run dev
 The application provides two main pages, each corresponding to an endpoint in the backend.
 
 ### 1. Basic Info
-![alt text](image-1.png)
+<img width="712" alt="image" src="https://github.com/user-attachments/assets/a4cfdb60-ca57-4e7d-864e-730406d9bfc9">
 
 ### 2. Insight
-![alt text](image.png)
+<img width="707" alt="image" src="https://github.com/user-attachments/assets/7fd73a8a-9e2a-4ac4-a768-c86ab254ee4a">
 
 ## Project Structure
 This application follows a modular architecture to separate different responsibilities and make the codebase easier to manage.
