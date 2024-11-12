@@ -8,8 +8,6 @@ RUN npm install
 
 COPY . .
 
-ENV VUE_APP_EXPRESS_BACKEND_URL=http://default-url
-
 RUN npm run build
 
 FROM nginx:stable-alpine AS production-stage
