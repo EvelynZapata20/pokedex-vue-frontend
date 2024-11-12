@@ -53,22 +53,19 @@ responsibilities and make the codebase easier to manage.
 
 ```bash
 .
-├── node_modules          # Dependencies installed via npm
-├── public                # Public files accessible directly at the app's root
-│   └── favicon.ico       # Icon file displayed in the browser tab for the application
-├── src                   # Main source code directory
-│   ├── assets            # Static files like images, fonts, etc.
-│   │   └── css           # Folder for custom CSS files
-│   │       └── app.css   # Main CSS file containing global styles for the app
-│   ├── routes            # Configuration for the app's routes
-│   │   └── pokeneaRoutes.js      # Router configuration file defining the app's views and routes
-│   ├── services          # Services to interact with external APIs
-│   │   └── pokeneaService.js  # Service file with functions to make HTTP requests to the Pokeneas backend
-│   ├── views             # Main views of the application, corresponding to the main pages
-│   │   ├── BasicInfoView.vue   # View that displays basic information about Pokeneas
-│   │   └── InsightView.vue     # View that shows detailed information about Pokeneas, such as image and phrase
-│   ├── App.vue           # Root Vue component that wraps the entire application
-│   └── main.js           # Entry point of the application where Vue and router are initialized
+├── src
+│   ├── assets               # Contains assets for styling and media.
+│   │   └── css              # Contains global and component-specific stylesheets.
+│   ├── routes               # Defines routes for navigating between views.
+│   ├── services             # Contains services for handling API requests and business logic.
+│   ├── views                # Directory for application views, each with its own folder for organization.
+│   │   ├── BasicInfo        # BasicInfo view and its specific files.
+│   │   └── Insight          # Insight view and its specific files.
+│   ├── App.vue              # Root component of the Vue application.
+│   └── main.js              # Entry point for initializing the Vue instance and mounting the application.
+├── public
+│   ├── favicon.ico          # Icon displayed in the browser tab.
+│   └── index.html           # Main HTML file and entry point for the application.
 ├── .env                  # Environment variables file, used for sensitive configurations or environment-specific settings
 ├── .gitignore            # Specifies files and folders to ignore in version control
 ├── babel.config.js       # Babel configuration for JavaScript compatibility with different browsers
