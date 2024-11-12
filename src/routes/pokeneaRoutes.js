@@ -8,7 +8,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(process.env.VUE_APP_EXPRESS_BACKEND_URL),
+  history: createWebHistory(),
   routes,
 })
 
