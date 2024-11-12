@@ -10,7 +10,7 @@ module.exports = defineConfig({
     plugins: [
       new (require('webpack')).DefinePlugin({
         'process.env': {
-          API_URL: JSON.stringify(process.env.VUE_APP_EXPRESS_BACKEND_URL),
+          API_URL: JSON.stringify(window.env.VUE_APP_EXPRESS_BACKEND_URL),
         }
       })
     ]
