@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const API_URL = window.env.VUE_APP_EXPRESS_BACKEND_URL
+const API_URL = process.env.VUE_APP_EXPRESS_BACKEND_URL
 
 class PokeneaService {
   async getBasicInfo() {
