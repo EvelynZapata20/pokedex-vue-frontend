@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -21,7 +22,7 @@ header {
 
 nav {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   gap: 30px;
 }
@@ -40,11 +41,6 @@ a:hover {
   color: #f0c330;
 }
 
-.router-link-active {
-  font-weight: bold;
-  color: #f0c330;
-}
-
 main {
   display: flex;
   justify-content: center;
@@ -53,69 +49,7 @@ main {
   background-color: rgba(0, 0, 0, 0.87);
 }
 
-.text-section h1,
-.basic-info-container h1 {
-  text-transform: uppercase;
-  font-size: 2.5rem;
+.routes-link-active {
   font-weight: bold;
-  margin-bottom: 10px;
-  line-height: 1.2;
-  color: white;
-}
-
-.insight-container {
-  display: flex;
-  height: 88vh; 
-  width: 80%;
-  max-width: 1200px; 
-  color: white;
-  border: 1px solid #f0c330;
-}
-
-.image {
-  max-width: 100%;
-  border:1px solid #f0c330;
-  height: auto;
-  object-fit: cover;
-}
-
-.text-section {
-  flex: 1;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
-  padding-left: 40px;
-}
-
-.text-section p {
-  font-size: 1.2rem;
-  color: #b0b0b0; 
-}
-
-.basic-info-container {
-  display: flex; 
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
-}
-
-.card-container {
-  margin-top: 50px;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  width: 100%;
-  max-width: 800px;
-}
-
-.card {
-  border: 2px solid #f0c330;
-  border-radius: 15px;
-  padding: 20px;
-  width: 200px; 
-  text-align: center;
+  color: #f0c330;
 }

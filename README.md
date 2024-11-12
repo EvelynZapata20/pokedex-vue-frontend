@@ -1,6 +1,11 @@
 # `pokedex-vue-frontend`
 
-This project is a frontend application developed with Vue.js to visualize and explore "Pokeneas," fictional creatures inspired by Antioquia. The application consumes the [pokedex-express-backend](https://github.com/kristianrpo/pokedex-express-backend) API to retrieve information about the Pokeneas, displaying their attributes, abilities, images, and characteristic phrases.
+This project is a frontend application developed with Vue.js to visualize and
+explore "Pokeneas," fictional creatures inspired by Antioquia. The application
+consumes the
+[pokedex-express-backend](https://github.com/kristianrpo/pokedex-express-backend)
+API to retrieve information about the Pokeneas, displaying their attributes,
+abilities, images, and characteristic phrases.
 
 ## Table of Contents
 
@@ -21,22 +26,31 @@ npm install
 ```
 
 ## Usage
+
 To run the application, use the following command:
+
 ```bash
 npm run dev
 ```
 
 ## Pages
-The application provides two main pages, each corresponding to an endpoint in the backend.
+
+The application provides two main pages, each corresponding to an endpoint in
+the backend.
 
 ### 1. Basic Info
+
 <img width="712" alt="image" src="https://github.com/user-attachments/assets/a4cfdb60-ca57-4e7d-864e-730406d9bfc9">
 
 ### 2. Insight
+
 <img width="707" alt="image" src="https://github.com/user-attachments/assets/7fd73a8a-9e2a-4ac4-a768-c86ab254ee4a">
 
 ## Project Structure
-This application follows a modular architecture to separate different responsibilities and make the codebase easier to manage.
+
+This application follows a modular architecture to separate different
+responsibilities and make the codebase easier to manage.
+
 ```bash
 .
 ├── node_modules          # Dependencies installed via npm
@@ -46,10 +60,10 @@ This application follows a modular architecture to separate different responsibi
 │   ├── assets            # Static files like images, fonts, etc.
 │   │   └── css           # Folder for custom CSS files
 │   │       └── app.css   # Main CSS file containing global styles for the app
-│   ├── router            # Configuration for the app's routes
-│   │   └── index.js      # Router configuration file defining the app's views and routes
+│   ├── routes            # Configuration for the app's routes
+│   │   └── pokeneaRoutes.js      # Router configuration file defining the app's views and routes
 │   ├── services          # Services to interact with external APIs
-│   │   └── PokeneaService.js  # Service file with functions to make HTTP requests to the Pokeneas backend
+│   │   └── pokeneaService.js  # Service file with functions to make HTTP requests to the Pokeneas backend
 │   ├── views             # Main views of the application, corresponding to the main pages
 │   │   ├── BasicInfoView.vue   # View that displays basic information about Pokeneas
 │   │   └── InsightView.vue     # View that shows detailed information about Pokeneas, such as image and phrase
@@ -68,18 +82,22 @@ This application follows a modular architecture to separate different responsibi
 ```
 
 ## Environment variables
-Create a .env file in the root directory to store environment variables. This file will allow you to configure the backend API URL.
+
+Create a .env file in the root directory to store environment variables. This
+file will allow you to configure the backend API URL.
 
 In the .env file, define the following variable:
 
 ```
-VUE_APP_EXPRESS_BACKEND_URL=http://localhost:3000
+EXPRESS_BACKEND_URL=http://localhost:3000
 ```
 
-Replace http://localhost:3000 with the actual URL where your Express API is running.
+Replace http://localhost:3000 with the actual URL where your Express API is
+running.
 
 ## Authors
+
 This project was developed by [Kristian Restrepo][1] and [Evelyn Zapata][2].
 
-[1]: https://github.com/kristianrpo 
-[2]: https://github.com/EvelynZapata20 
+[1]: https://github.com/kristianrpo
+[2]: https://github.com/EvelynZapata20

@@ -1,0 +1,34 @@
+.basic-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.basic-info-container h1 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  line-height: 1.2;
+  color: white;
+}
+
+.card-container {
+  margin-top: 50px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+.card {
+  border: 2px solid #f0c330;
+  border-radius: 15px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+}
