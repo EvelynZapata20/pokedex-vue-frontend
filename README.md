@@ -74,6 +74,7 @@ responsibilities and make the codebase easier to manage.
 ├── package-lock.json     # Locks the versions of dependencies for consistent installations
 ├── package.json          # Defines project dependencies, scripts, and metadata
 └── README.md             # Project documentation
+└── start.sh              # File to inject .env in production
 └── vue.config.js         # Configuration file to customize Vue CLI settings for build and dev server
 
 ```
@@ -86,7 +87,7 @@ file will allow you to configure the backend API URL.
 In the .env file, define the following variable:
 
 ```
-EXPRESS_BACKEND_URL=http://localhost:3000
+VUE_APP_EXPRESS_BACKEND_URL=http://localhost:3000
 ```
 
 Replace http://localhost:3000 with the actual URL where your Express API is
